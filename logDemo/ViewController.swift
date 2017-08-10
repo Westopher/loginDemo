@@ -130,6 +130,8 @@ class ViewController: UIViewController {
                 label.text = "Hi there " + textField.text! + "!"
             
                 isLoggedIn = true
+                
+                logOutButton.alpha = 1
             
             } catch  {
                 
