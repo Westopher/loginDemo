@@ -26,9 +26,9 @@ class ViewController: UIViewController {
             
             if results.count > 0 {
                 
-                for result in results {
+                for result in results as! [NSManagedObject] {
                     
-                    context.delete(result as! NSManagedObject)
+                    context.delete(result)
                     
                     do {
                         
